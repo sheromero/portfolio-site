@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Setup custom variant for dark mode */
+@custom-variant dark (&:is(.dark *));
+
+/* Expose Tailwind color tokens */
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Expose colors using the root variables */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* LIGHT MODE VARIABLES */
+:root {
+  --radius: 0.625rem;
+
+  --background: #ebebeb;
+  --foreground: #4e4d49;
+
+  --card: #e1e2e6;
+  --card-foreground: #4e4d49;
+
+  --popover: #e1e2e6;
+  --popover-foreground: #4e4d49;
+
+  --primary: #787775;
+  --primary-foreground: #ebebeb;
+
+  --secondary: #97978f;
+  --secondary-foreground: #4e4d49;
+
+  --muted: #c4b3a9;
+  --muted-foreground: #4e4d49;
+
+  --accent: #b7946a;
+  --accent-foreground: #ebebeb;
+
+  --destructive: #d9534f; /* red, added for alerts */
+
+  --border: #c4b3a9;
+  --input: #c4b3a9;
+  --ring: #b7946a;
+
+  --chart-1: #725e45;
+  --chart-2: #b7946a;
+  --chart-3: #e2c58d;
+  --chart-4: #97978f;
+  --chart-5: #787775;
+
+  --sidebar: #e1e2e6;
+  --sidebar-foreground: #4e4d49;
+
+  --sidebar-primary: #787775;
+  --sidebar-primary-foreground: #ebebeb;
+
+  --sidebar-accent: #b7946a;
+  --sidebar-accent-foreground: #ebebeb;
+
+  --sidebar-border: #c4b3a9;
+  --sidebar-ring: #b7946a;
+}
+
+/* DARK MODE VARIABLES */
+.dark {
+  --background: #232220;
+  --foreground: #f4f1ed;
+
+  --card: #3a3836;
+  --card-foreground: #f4f1ed;
+
+  --popover: #3a3836;
+  --popover-foreground: #f4f1ed;
+
+  --primary: #8d7f7a;
+  --primary-foreground: #f4f1ed;
+
+  --secondary: #b8a9a0;
+  --secondary-foreground: #232220;
+
+  --muted: #4e4c4f;
+  --muted-foreground: #b8a9a0;
+
+  --accent: #e6dcd1;
+  --accent-foreground: #232220;
+
+  --destructive: #c47b7b;
+  --border: #4e4c4f;
+  --input: #4e4c4f;
+  --ring: #b8a9a0;
+
+  --chart-1: #8d7f7a;
+  --chart-2: #b8a9a0;
+  --chart-3: #e6dcd1;
+  --chart-4: #c47b7b;
+  --chart-5: #3a3836;
+
+  --sidebar: #232220;
+  --sidebar-foreground: #f4f1ed;
+
+  --sidebar-primary: #8d7f7a;
+  --sidebar-primary-foreground: #f4f1ed;
+
+  --sidebar-accent: #b8a9a0;
+  --sidebar-accent-foreground: #232220;
+
+  --sidebar-border: #4e4c4f;
+  --sidebar-ring: #b8a9a0;
+}
+
+/*
+html, body, * {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+*/
