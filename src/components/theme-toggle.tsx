@@ -4,18 +4,15 @@ import { useState, useEffect } from "react";
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
-  // Sync local state with theme context on mount and when theme changes
   const [mode, setMode] = useState<"light" | "dark">(theme === "dark" ? "dark" : "light");
 
   useEffect(() => {
-    // Update local state when theme context changes externally
     if (theme === "dark" || theme === "light") {
       setMode(theme);
     }
   }, [theme]);
 
   useEffect(() => {
-    // Update theme context when mode changes locally
     if (theme !== mode) {
       setTheme(mode);
     }
@@ -25,35 +22,52 @@ export function ThemeToggle() {
     setMode((prev) => (prev === "light" ? "dark" : "light"));
   };
 
-  const iconColor = mode === "light" 
-    ? "var(--color-primary-foreground, #fff)" 
-    : "var(--color-muted-foreground, #888)";
+  const colors = {
+    light: {
+      icon: "var(--primary-foreground, #232220)",
+      bg: "var(--muted, #e6e6e6)",
+      bgHover: "var(--accent, #d0d0d0)",
+    },
+    dark: {
+      icon: "var(--primary-foreground, #f4f1ed)",
+      bg: "var(--muted, #4e4c4f)",
+      bgHover: "var(--accent, #6e6c70)",
+    },
+  };
+
+  const currentColors = mode === "light" ? colors.light : colors.dark;
 
   return (
     <button
       onClick={toggleMode}
       aria-label="Toggle theme"
       title="Toggle theme"
-      className="
-        rounded-[var(--radius)] 
-        w-10 h-10 
-        flex items-center justify-center 
-        bg-[var(--color-muted)] 
-        hover:bg-[var(--color-accent)] 
-      "
       type="button"
+      className="
+        w-9 h-9
+        rounded-[var(--radius)]
+        flex items-center justify-center
+        transition-all duration-300 ease-in-out
+        hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
+      "
+      style={{
+        backgroundColor: currentColors.bg,
+        color: currentColors.icon,
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = currentColors.bgHover;
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = currentColors.bg;
+      }}
     >
-      <div
-        className="transition-transform duration-300 ease-in-out hover:scale-110"
-        style={{ color: iconColor }}
-      >
-        {mode === "light" ? (
-          <Sun className="h-5 w-5" />
-        ) : (
-          <Moon className="h-5 w-5" />
-        )}
-      </div>
+      {mode === "light" ? (
+        <Sun className="h-5 w-5" />
+      ) : (
+        <Moon className="h-5 w-5" />
+      )}
     </button>
   );
 }
+
 

@@ -38,7 +38,7 @@ const educationHistory = [
 export default function Experience() {
   return (
     <Tabs defaultValue="work">
-      <TabsList className="mb-2 grid w-full grid-cols-2">
+      <TabsList className="px-1 mb-2 grid w-full grid-cols-2">
         <TabsTrigger value="work">Work</TabsTrigger>
         <TabsTrigger value="education">Education</TabsTrigger>
       </TabsList>

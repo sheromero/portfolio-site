@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import Experience from "@/components/experience";
 import pic from "../assets/pic.jpg";
 import Socials from "@/components/socials";
-import { ArrowDown, ArrowDownRight } from "lucide-react";
+import { ArrowDown, ArrowDownRight, MapPin } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   component: App,
@@ -14,14 +14,6 @@ function App() {
   return (
     <article className="bg-background text-foreground mt-8 flex flex-col gap-16 pb-16">
       <section className="bg-background text-foreground flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
-        <img
-          className="rounded-lg"
-          src={pic}
-          width={125}
-          height={125}
-          alt="Description"
-          loading="lazy"
-        />
         <div className="flex flex-col">
           <div className="flex items-center gap-2">
             <h1 className="title text-5xl">Hey, it's Sherif.</h1>
@@ -34,13 +26,16 @@ function App() {
             />
           </div>
           <p className="mt-2 font-medium">
-            {/* Update my age */}
             {new Date().getFullYear() - BIRTH_YEAR}
-            y.o. software engineer/developer from Australia AU
+            y.o. software engineer/developer
           </p>
+          <div className="flex gap-2">
+            <MapPin className="size-4 animate-bounce sm:block"></MapPin>
+            <p>Western Australia, AU</p>
+          </div>
           <p className="mt-8 max-w-sm">
-            Backend by trade, full-stack by passion. I build and self-host the
-            lot. I also like automation and machine learning/Computer vision.
+            Fullstack developer with experience in web automation, scraping and intergrating
+            machine learning/computer vision solutions.
           </p>
           <div className="mt-8 flex items-end gap-1">
             <p className="font-semibold">
@@ -53,6 +48,14 @@ function App() {
             <Socials></Socials>
           </section>
         </div>
+        <img
+          className="rounded-lg"
+          src={pic}
+          width={200}
+          height={125}
+          alt="Description"
+          loading="lazy"
+        />
       </section>
       <Experience></Experience>
       <section className="flex flex-col gap-8">
