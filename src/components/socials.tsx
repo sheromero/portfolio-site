@@ -7,7 +7,6 @@ export default function Socials() {
 type IconName = keyof typeof dynamicIconImports;
 
 const socials: { name: string; href: string; icon: IconName }[] = [
-  { name: 'Twitter', href: 'https://twitter.com', icon: 'twitter' },
   { name: 'GitHub', href: 'https://github.com/sheromero', icon: 'github' },
   { name: 'LinkedIn', href: 'https://www.linkedin.com/in/sherif-f-moussa/', icon: 'linkedin' },
 ];

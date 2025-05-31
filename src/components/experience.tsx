@@ -1,37 +1,77 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Briefcase, Code, GraduationCap } from "lucide-react";
 import Timeline from "./timeline";
 
 const workExperience = [
   {
-    role: "Software Developer",
-    company: "Car Soruce Connect",
-    period: "2023 - Present",
-    description:
-      "Building scalable React applications and implementing design systems using Tailwind CSS.",
+    name: "Car Source Connect",
+    title: "Software Developer",
+    startDate: "2023",
+    endDate: "Present",
+    logo: "/logos/car-source.png", // replace with actual path or leave undefined
+    description: [
+      "Building scalable React applications.",
+      "Implementing design systems using Tailwind CSS.",
+    ],
+    links: [
+      {
+        name: "Company Site",
+        href: "https://carsourceconnect.com",
+        icon: Briefcase,
+      },
+    ],
   },
   {
-    role: "Software Developer",
-    company: "Sole Trader",
-    period: "Summer 2022",
-    description:
-      "Worked on full-stack features with Node.js and React, improving app performance by 20%.",
+    name: "Sole Trader",
+    title: "Software Developer",
+    startDate: "Summer 2022",
+    endDate: "Summer 2022",
+    logo: "/logos/sole-trader.png", // replace or leave out
+    description: [
+      "Worked on full-stack features with Node.js and React.",
+      "Improved app performance by 20%.",
+    ],
+    links: [],
+  },
+  {
+    name: "Thales",
+    title: "",
+    startDate: "Summer 2022",
+    endDate: "Summer 2022",
+    logo: "/logos/sole-trader.png", // replace or leave out
+    description: [
+      "Worked on full-stack features with Node.js and React.",
+      "Improved app performance by 20%.",
+    ],
+    links: [
+      {
+        name: "Company Site",
+        href: "https://www.thalesgroup.com/en",
+        icon: Briefcase,
+      },
+    ],
   },
 ];
 
 const educationHistory = [
   {
-    degree: "B.Sc. Computer Science",
-    institution: "Curtin University",
-    period: "2020 - 2022",
-    description:
-      "Graduated with High distinction. Focused on software engineering, data structures, and algorithms. Completed a capstone project using React Native.",
-  },
-  {
-    degree: "Full-Stack Web Dev Certificate",
-    institution: "Online Bootcamp",
-    period: "2021",
-    description:
-      "Learned frontend and backend development, including React, Node.js, and databases.",
+    name: "Curtin University",
+    title: "B.Sc. Computer Science",
+    startDate: "2020",
+    endDate: "2022",
+    logo: "src/assets/uni.jpg", // replace or leave blank
+    description: [
+      "Graduated with High Distinction.",
+      "Focused on software engineering, data structures, and algorithms.",
+      "Completed a capstone project using React Native.",
+    ],
+    links: [
+      {
+        name: "University Site",
+        href: "https://www.curtin.edu.au/",
+        icon: GraduationCap,
+      },
+    ],
   },
 ];
 
@@ -44,11 +84,11 @@ export default function Experience() {
       </TabsList>
 
       <TabsContent value="work">
-        <Timeline experience={workExperience} />
+        <Timeline items={workExperience} />
       </TabsContent>
 
       <TabsContent value="education">
-        <Timeline experience={educationHistory} />
+        <Timeline items={educationHistory} />
       </TabsContent>
     </Tabs>
   );

@@ -48,26 +48,18 @@ export function ThemeToggle() {
         rounded-[var(--radius)]
         flex items-center justify-center
         transition-all duration-300 ease-in-out
-        hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
+        hover:scale-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring
       "
       style={{
-        backgroundColor: currentColors.bg,
+        backgroundColor: "transparent",
         color: currentColors.icon,
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.backgroundColor = currentColors.bgHover;
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.backgroundColor = currentColors.bg;
       }}
     >
       {mode === "light" ? (
-        <Sun className="h-5 w-5" />
+        <Sun className="h-5 w-5 text-foreground" />
       ) : (
-        <Moon className="h-5 w-5" />
+        <Moon className="h-5 w-5 text-foreground" />
       )}
     </button>
   );
 }
-
-

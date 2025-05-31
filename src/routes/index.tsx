@@ -1,12 +1,49 @@
 import { createFileRoute } from "@tanstack/react-router";
 import Experience from "@/components/experience";
-import pic from "../assets/pic.jpg";
 import Socials from "@/components/socials";
 import { ArrowDown, ArrowDownRight, MapPin } from "lucide-react";
+import ProjectList from "@/components/project-list";
+import { Link } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
   component: App,
 });
+
+const projects = [
+  {
+    title: "Portfolio Website",
+    description: "My personal site built with React, Vite, and Tailwind CSS.",
+    techStack: ["React", "Vite", "Tailwind", "TypeScript"],
+    links: [
+      { name: "GitHub", href: "https://github.com/yourname/portfolio" },
+      { name: "Live Demo", href: "https://yourdomain.com" },
+    ],
+  },
+  {
+    title: "Task Tracker",
+    description: "A serverless app to track personal tasks and habits.",
+    techStack: ["Next.js", "Supabase", "Prisma"],
+    links: [
+      { name: "GitHub", href: "https://github.com/yourname/task-tracker" },
+    ],
+  },
+  {
+    title: "Task Tracker",
+    description: "A serverless app to track personal tasks and habits.",
+    techStack: ["Next.js", "Supabase", "Prisma"],
+    links: [
+      { name: "GitHub", href: "https://github.com/yourname/task-tracker" },
+    ],
+  },
+  {
+    title: "Task Tracker",
+    description: "A serverless app to track personal tasks and habits.",
+    techStack: ["Next.js", "Supabase", "Prisma"],
+    links: [
+      { name: "GitHub", href: "https://github.com/yourname/task-tracker" },
+    ],
+  },
+];
 
 const BIRTH_YEAR = 2001;
 
@@ -34,8 +71,8 @@ function App() {
             <p>Western Australia, AU</p>
           </div>
           <p className="mt-8 max-w-sm">
-            Fullstack developer with experience in web automation, scraping and intergrating
-            machine learning/computer vision solutions.
+            Fullstack developer with experience in web automation, scraping and
+            intergrating machine learning/computer vision solutions.
           </p>
           <div className="mt-8 flex items-end gap-1">
             <p className="font-semibold">
@@ -50,7 +87,7 @@ function App() {
         </div>
         <img
           className="rounded-lg"
-          src={pic}
+          src={"src/assets/pic.jpg"}
           width={200}
           height={125}
           alt="Description"
@@ -60,7 +97,16 @@ function App() {
       <Experience></Experience>
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">
-          <h2 className="title text-2xl sm:text-3xl">featured projects</h2>
+          <h2 className="title text-2xl sm:text-3xl">Projects</h2>
+        </div>
+        <ProjectList projects={projects.slice(0, 2)}></ProjectList>
+        <div className="flex justify-center mt-4">
+          <Link
+            to="/projects"
+            className="inline-flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+          >
+            View More Projects →
+          </Link>
         </div>
       </section>
     </article>

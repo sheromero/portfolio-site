@@ -1,5 +1,6 @@
 import { Outlet, createRootRoute } from "@tanstack/react-router";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const Route = createRootRoute({
@@ -9,6 +10,7 @@ export const Route = createRootRoute({
         <body className="bg-background text-foreground mx-auto flex min-h-screen max-w-3xl flex-col px-8 font-sans antialiased">
           <Header></Header>
           <Outlet />
+          <Footer></Footer>
         </body>
       </html>
     </ThemeProvider>
