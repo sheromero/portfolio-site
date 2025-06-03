@@ -1,4 +1,4 @@
-import  TimelineItem  from "./timeline-item";
+import TimelineItem from "./timeline-item";
 import { Card, CardContent } from "@/components/ui/card";
 
 interface TimelineProps {
@@ -15,7 +15,7 @@ interface TimelineProps {
 
 export default function Timeline({ items }: TimelineProps) {
   return (
-    <Card>
+    <Card className="bg-background text-foreground dark:bg-card">
       <CardContent className="p-0">
         <ul className="ml-10 border-l">
           {items.map((item, idx) => (

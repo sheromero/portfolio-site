@@ -1,4 +1,10 @@
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
@@ -19,7 +25,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
   const { title, description, techStack, links } = project;
 
   return (
-    <Card className="w-full">
+    <Card className="w-full bg-background text-foreground dark:bg-card">
       <CardHeader>
         <CardTitle className="text-lg font-semibold">{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
@@ -28,7 +34,11 @@ export default function ProjectItem({ project }: ProjectItemProps) {
         {techStack && techStack.length > 0 && (
           <div className="flex flex-wrap gap-2">
             {techStack.map((tech, idx) => (
-              <Badge key={idx} variant="secondary">
+              <Badge
+                className="bg-muted text-muted-foreground dark:bg-primary dark:text-foreground"
+                key={idx}
+                variant="secondary"
+              >
                 {tech}
               </Badge>
             ))}

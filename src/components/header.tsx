@@ -6,8 +6,8 @@ export default function Header() {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 bg-background/75 py-6 backdrop-blur-sm">
-      <nav className="relative flex items-center justify-between w-full gap-4">
+    <header className="sticky top-0 z-50 w-full bg-background/85 py-6 backdrop-blur-sm">
+      <nav className="mx-auto flex w-full max-w-3xl items-center justify-between px-8">
         <Tabs value={location.pathname}>
           <TabsList className="bg-muted px-1 rounded-lg">
             <TabsTrigger asChild value="/">

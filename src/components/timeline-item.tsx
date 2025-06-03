@@ -58,8 +58,8 @@ export default function TimelineItem({
                 rel="noopener noreferrer"
                 className="flex items-center gap-1"
               >
-                <Badge>
-                  <link.icon className="size-3" />
+                <Badge className="bg-muted text-muted-foreground dark:bg-primary dark:text-foreground">
+                  <link.icon className="size-3 bg-mute" />
                   {link.name}
                 </Badge>
               </a>
