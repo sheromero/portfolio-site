@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "title": "Autodoc",
+      "description": "A serverless app to track personal tasks and habits.",
+      "techStack": ["Vite", "NeonDB", "Prisma", "Docuseal"],
+      "links": [
+        { "name": "Website", "href": "https://www.autodoc.com.au/" }
+      ],
+      "image": "/autodoc.png"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "My personal site built with React, Vite, and Tailwind CSS.",
+      "techStack": ["React", "Vite", "Tailwind", "TypeScript"],
+      "links": [
+        { "name": "GitHub", "href": "https://github.com/sheromero/portfolio-site" },
+        { "name": "Website", "href": "https://yourdomain.com" }
+      ],
+      "image": "/portfolio-site.png"
+    },
+    {
+      "title": "Task Tracker",
+      "description": "A serverless app to track personal tasks and habits.",
+      "techStack": ["Next.js", "Supabase", "Prisma"],
+      "links": [
+        { "name": "GitHub", "href": "https://github.com/yourname/task-tracker" }
+      ]
+    },
+    {
+      "title": "Manheim Auction Scraper",
+      "description": "A serverless app to track personal tasks and habits.",
+      "techStack": ["Cheerio", "SQLite", "Kysely"],
+      "links": [
+        { "name": "GitHub", "href": "https://github.com/yourname/task-tracker" }
+      ]
+    }
+  ]
+}

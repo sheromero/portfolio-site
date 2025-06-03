@@ -1,11 +1,5 @@
 import ProjectItem from "./project-item";
-
-interface Project {
-  title: string;
-  description: string;
-  techStack: string[];
-  links: { name: string; href: string }[];
-}
+import type { Project } from "@/lib/schema";
 
 interface ProjectListProps {
   projects: Project[];

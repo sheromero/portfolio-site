@@ -9,14 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { Link } from "@tanstack/react-router";
-
-interface Project {
-  title: string;
-  description: string;
-  techStack: string[];
-  links: { name: string; href: string }[];
-  image?: string;
-}
+import type { Project } from "@/lib/schema";
 
 interface ProjectItemProps {
   project: Project;

@@ -4,52 +4,18 @@ import Socials from "@/components/socials";
 import { ArrowDown, ArrowDownRight, MapPin, File } from "lucide-react";
 import ProjectList from "@/components/project-list";
 import { Link } from "@tanstack/react-router";
+import projectData from "@/data/projects.json";
+import { projectListSchema } from "@/lib/schema";
 
 export const Route = createFileRoute("/")({
   component: App,
 });
 
-const projects = [
-    {
-    title: "Autodoc",
-    description: "A serverless app to track personal tasks and habits.",
-    techStack: ["Vite", "NeonDB", "Prisma"],
-    links: [
-      { name: "Website", href: "https://www.autodoc.com.au/" },
-    ],
-    image: "/autodoc.png"
-  },
-  {
-    title: "Portfolio Website",
-    description: "My personal site built with React, Vite, and Tailwind CSS.",
-    techStack: ["React", "Vite", "Tailwind", "TypeScript"],
-    links: [
-      { name: "GitHub", href: "https://github.com/sheromero/portfolio-site" },
-      { name: "Website", href: "https://yourdomain.com" },
-    ],
-    image: "/portfolio-site.png"
-  },
-  {
-    title: "Task Tracker",
-    description: "A serverless app to track personal tasks and habits.",
-    techStack: ["Next.js", "Supabase", "Prisma"],
-    links: [
-      { name: "Website", href: "https://github.com/yourname/task-tracker" },
-    ],
-  },
-  {
-    title: "Task Tracker",
-    description: "A serverless app to track personal tasks and habits.",
-    techStack: ["Next.js", "Supabase", "Prisma"],
-    links: [
-      { name: "GitHub", href: "https://github.com/yourname/task-tracker" },
-    ],
-  },
-];
-
 const BIRTH_YEAR = 2001;
 
 function App() {
+  const projects = projectListSchema.parse(projectData).projects;
+
   return (
     <article className="bg-background text-foreground mt-8 flex flex-col gap-16 pb-16">
       <section className="bg-background text-foreground flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">

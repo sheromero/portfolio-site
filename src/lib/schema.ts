@@ -21,11 +21,27 @@ export const experienceSchema = z.object({
 
 export type Experience = z.infer<typeof experienceSchema>;
 
+export const projectSchema = z.object({
+  title: z.string(),
+  description: z.string(),
+  techStack: z.string().array(),
+  links: z
+    .object({
+      name: z.string(),
+      href: z.string(),
+    })
+    .array(),
+  image: z.string().optional(),
+});
+
+export type Project = z.infer<typeof projectSchema>;
+
 export const educationSchema = z.object({
   education: z.array(experienceSchema),
 });
+
 export const workSchema = z.object({
   work: z.array(experienceSchema),
 });
 
-
+export const projectListSchema = z.object({ projects: z.array(projectSchema) });
