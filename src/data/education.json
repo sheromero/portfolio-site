@@ -1,0 +1,23 @@
+{
+  "education": [
+    {
+      "name": "Curtin University",
+      "title": "B.Sc. Computer Science",
+      "startDate": "2020",
+      "endDate": "2022",
+      "logo": "/uni.jpg",
+      "description": [
+        "Graduated with High Distinction.",
+        "Focused on software engineering, data structures, and algorithms.",
+        "Completed a capstone project using React Native."
+      ],
+      "links": [
+        {
+          "name": "University Site",
+          "href": "https://www.curtin.edu.au/",
+          "icon": "graduation-cap"
+        }
+      ]
+    }
+  ]
+}

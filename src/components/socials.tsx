@@ -1,16 +1,19 @@
-import Icon from './icon';
-import dynamicIconImports from 'lucide-react/dynamicIconImports';
+import Icon from "./icon";
+import dynamicIconImports from "lucide-react/dynamicIconImports";
 
 export default function Socials() {
   // Placeholder data defined inline
 
-type IconName = keyof typeof dynamicIconImports;
+  type IconName = keyof typeof dynamicIconImports;
 
-const socials: { name: string; href: string; icon: IconName }[] = [
-  { name: 'GitHub', href: 'https://github.com/sheromero', icon: 'github' },
-  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/sherif-f-moussa/', icon: 'linkedin' },
-];
-
+  const socials: { name: string; href: string; icon: IconName }[] = [
+    { name: "GitHub", href: "https://github.com/sheromero", icon: "github" },
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/sherif-f-moussa/",
+      icon: "linkedin",
+    },
+  ];
 
   return (
     <section className="flex gap-6">
@@ -20,7 +23,7 @@ const socials: { name: string; href: string; icon: IconName }[] = [
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-primary dark:hover:text-foreground" 
+          className="text-muted-foreground hover:text-primary dark:hover:text-foreground"
           title={name}
         >
           <span className="sr-only">{name}</span>

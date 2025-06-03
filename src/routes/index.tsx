@@ -10,29 +10,31 @@ export const Route = createFileRoute("/")({
 });
 
 const projects = [
+    {
+    title: "Autodoc",
+    description: "A serverless app to track personal tasks and habits.",
+    techStack: ["Vite", "NeonDB", "Prisma"],
+    links: [
+      { name: "Website", href: "https://www.autodoc.com.au/" },
+    ],
+    image: "/autodoc.png"
+  },
   {
     title: "Portfolio Website",
     description: "My personal site built with React, Vite, and Tailwind CSS.",
     techStack: ["React", "Vite", "Tailwind", "TypeScript"],
     links: [
-      { name: "GitHub", href: "https://github.com/yourname/portfolio" },
-      { name: "Live Demo", href: "https://yourdomain.com" },
+      { name: "GitHub", href: "https://github.com/sheromero/portfolio-site" },
+      { name: "Website", href: "https://yourdomain.com" },
     ],
+    image: "/portfolio-site.png"
   },
   {
     title: "Task Tracker",
     description: "A serverless app to track personal tasks and habits.",
     techStack: ["Next.js", "Supabase", "Prisma"],
     links: [
-      { name: "GitHub", href: "https://github.com/yourname/task-tracker" },
-    ],
-  },
-  {
-    title: "Task Tracker",
-    description: "A serverless app to track personal tasks and habits.",
-    techStack: ["Next.js", "Supabase", "Prisma"],
-    links: [
-      { name: "GitHub", href: "https://github.com/yourname/task-tracker" },
+      { name: "Website", href: "https://github.com/yourname/task-tracker" },
     ],
   },
   {
@@ -76,7 +78,7 @@ function App() {
           </p>
           <div className="mt-8 flex items-end gap-1">
             <p className="font-semibold">
-              Want something fun? Check out down there
+              (WIP) Want something fun? Check out down there
             </p>
             <ArrowDownRight className="hidden size-5 animate-bounce sm:block" />
             <ArrowDown className="block size-5 animate-bounce sm:hidden" />
@@ -96,7 +98,7 @@ function App() {
         </div>
         <img
           className="rounded-lg"
-          src={"src/assets/pic.jpg"}
+          src={"/pic.jpg"}
           width={200}
           height={125}
           alt="Description"

@@ -1,0 +1,52 @@
+{
+  "work": [
+    {
+      "name": "Car Source Connect",
+      "title": "Software Developer",
+      "startDate": "Oct 2024",
+      "endDate": "Apr 2025",
+      "logo": "/csc.png",
+      "description": [
+        "Building scalable React applications.",
+        "Implementing design systems using Tailwind CSS."
+      ],
+      "links": [
+        {
+          "name": "Company Site",
+          "href": "https://carsourceconnect.com",
+          "icon": "briefcase"
+        }
+      ]
+    },
+    {
+      "name": "Sole Trader",
+      "title": "Software Developer",
+      "startDate": "Jan 2024",
+      "endDate": "Present",
+      "logo": "/soletrader.png",
+      "description": [
+        "Worked on full-stack features with Node.js and React.",
+        "Improved app performance by 20%."
+      ],
+      "links": []
+    },
+    {
+      "name": "Thales Australia (via Curtin University Capstone Project)",
+      "title": "Industry Capstone Software Developer",
+      "startDate": "Feb 2022",
+      "endDate": "Dec 2022",
+      "logo": "/thales.jpg",
+      "description": [
+        "Building scalable React applications.",
+        "Implementing design systems using Tailwind CSS."
+      ],
+      "links": [
+        {
+          "name": "Company Site",
+          "href": "https://www.thalesgroup.com/en",
+          "icon": "briefcase"
+        }
+      ]
+    }
+  ]
+}
