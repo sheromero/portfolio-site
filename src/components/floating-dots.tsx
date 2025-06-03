@@ -71,7 +71,7 @@ export default function FloatingDots() {
           radius: Math.random() * 1.5 + 0.5,
           speedX: (Math.random() - 0.5) * 0.2,
           speedY: (Math.random() - 0.5) * 0.2,
-          opacity: Math.random() * 0.6 + 0.4,
+          opacity: Math.random() * 0.4 + 0.6,
           color,
         });
       }

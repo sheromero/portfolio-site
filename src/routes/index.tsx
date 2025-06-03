@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import Experience from "@/components/experience";
 import Socials from "@/components/socials";
-import { ArrowDown, ArrowDownRight, MapPin } from "lucide-react";
+import { ArrowDown, ArrowDownRight, MapPin, File } from "lucide-react";
 import ProjectList from "@/components/project-list";
 import { Link } from "@tanstack/react-router";
 
@@ -82,6 +82,15 @@ function App() {
             <ArrowDown className="block size-5 animate-bounce sm:hidden" />
           </div>
           <section className="mt-8 flex items-center gap-8">
+            <a
+              href="/resume(wip).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+            >
+              Resume
+              <File className="size-4" />
+            </a>
             <Socials></Socials>
           </section>
         </div>
