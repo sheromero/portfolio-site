@@ -7,16 +7,11 @@
       "endDate": "Apr 2025",
       "logo": "/csc.png",
       "description": [
-        "Building scalable React applications.",
-        "Implementing design systems using Tailwind CSS."
+        "Built full-stack internal tools with React, Node.js, and Fastify to boost operational efficiency.",
+        "Integrated ML models into car valuation, saving the sales team 2+ hours daily.",
+        "Created analytics dashboards for expenses, profit trends, and auction data to support better decisions."
       ],
-      "links": [
-        {
-          "name": "Company Site",
-          "href": "https://carsourceconnect.com",
-          "icon": "briefcase"
-        }
-      ]
+      "links": []
     },
     {
       "name": "Sole Trader",
@@ -25,8 +20,8 @@
       "endDate": "Present",
       "logo": "/soletrader.png",
       "description": [
-        "Worked on full-stack features with Node.js and React.",
-        "Improved app performance by 20%."
+        "Designed, built, and deployed web scrapers to collect historical and real-time data.",
+        "Validated and maintained accurate datasets critical for ML and computer vision models."
       ],
       "links": []
     },
@@ -37,8 +32,8 @@
       "endDate": "Dec 2022",
       "logo": "/thales.jpg",
       "description": [
-        "Building scalable React applications.",
-        "Implementing design systems using Tailwind CSS."
+        "Served as Scrum Master for an Agile capstone project with Thales Australia.",
+        "Developed an internal RAM usage and performance monitoring tool for Thales systems."
       ],
       "links": [
         {

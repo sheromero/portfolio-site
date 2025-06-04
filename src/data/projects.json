@@ -2,12 +2,21 @@
   "projects": [
     {
       "title": "Autodoc",
-      "description": "A serverless app to track personal tasks and habits.",
-      "techStack": ["Vite", "NeonDB", "Prisma", "Docuseal"],
+      "description": "A digital Contract Automation Platform tailored for the automotive industry.",
+      "techStack": ["Vite", "NeonDB", "Prisma", "Tailwind", "Docuseal"],
       "links": [
         { "name": "Website", "href": "https://www.autodoc.com.au/" }
       ],
       "image": "/autodoc.png"
+    },
+    {
+      "title": "Manheim Auction Scraper",
+      "description": "An HTML web scraper built with Cheerio to extract publicly available car auction data.",
+      "techStack": ["TypeScript", "Cheerio", "SQLite", "Kysely", "Zod"],
+      "links": [
+        { "name": "GitHub", "href": "https://github.com/sheromero/manheim-auction-scraper" }
+      ],
+      "image": "/manheim.png"
     },
     {
       "title": "Portfolio Website",
@@ -15,25 +24,19 @@
       "techStack": ["React", "Vite", "Tailwind", "TypeScript"],
       "links": [
         { "name": "GitHub", "href": "https://github.com/sheromero/portfolio-site" },
-        { "name": "Website", "href": "https://yourdomain.com" }
+        { "name": "Website", "href": "https://portfolio-site-pied-three.vercel.app/" }
       ],
       "image": "/portfolio-site.png"
     },
     {
-      "title": "Task Tracker",
-      "description": "A serverless app to track personal tasks and habits.",
-      "techStack": ["Next.js", "Supabase", "Prisma"],
+      "title": "Autograd Engine from Scratch",
+      "description": "A Python implementation of a scalar-based autograd engine and neural network, inspired by Karpathy’s micrograd. Built to deepen understanding of backpropagation and computation graphs.",
+      "techStack": ["Python", "Jupyter"],
       "links": [
-        { "name": "GitHub", "href": "https://github.com/yourname/task-tracker" }
-      ]
-    },
-    {
-      "title": "Manheim Auction Scraper",
-      "description": "A serverless app to track personal tasks and habits.",
-      "techStack": ["Cheerio", "SQLite", "Kysely"],
-      "links": [
-        { "name": "GitHub", "href": "https://github.com/yourname/task-tracker" }
-      ]
+        { "name": "GitHub", "href": "https://github.com/sheromero/Autograd" },
+        {"name": "Youtube Reference", "href": "https://www.youtube.com/watch?v=VMj-3S1tku0"}
+      ],
+      "image": "/autograd.svg"
     }
   ]
 }
