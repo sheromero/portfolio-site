@@ -35,7 +35,7 @@ function App() {
             y.o. software engineer/developer
           </p>
           <div className="flex gap-2">
-            <MapPin className="size-4 animate-bounce sm:block"></MapPin>
+            <MapPin className="size-4 animate-bounce sm:block translate-y-1"></MapPin>
             <p>Western Australia, AU</p>
           </div>
           <p className="mt-8 max-w-sm">
