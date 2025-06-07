@@ -23,7 +23,7 @@ export default function Socials() {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-muted-foreground hover:text-primary dark:hover:text-foreground"
+          className="text-muted-foreground hover:text-primary dark:hover:text-foreground hover:scale-110 ease-in-out animation-duration-350"
           title={name}
         >
           <span className="sr-only">{name}</span>

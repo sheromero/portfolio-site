@@ -15,11 +15,11 @@ export default function Experience() {
         <TabsTrigger value="education">Education</TabsTrigger>
       </TabsList>
 
-      <TabsContent value="work">
+      <TabsContent value="work" className="animate-in slide-in-from-right-3 duration-350">
         <Timeline experience={work} />
       </TabsContent>
 
-      <TabsContent value="education">
+      <TabsContent value="education" className="animate-in slide-in-from-left-3 duration-350">
         <Timeline experience={education} />
       </TabsContent>
     </Tabs>

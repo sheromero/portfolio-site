@@ -13,7 +13,7 @@ export default function Header() {
             <TabsTrigger asChild value="/">
               <Link
                 to="/"
-                className="px-4 py-2 text-sm font-medium data-[state=active]:text-primary focus:outline-none transition-colors"
+                className="px-4 py-2 text-sm font-medium data-[state=active]:text-primary focus:outline-none"
               >
                 Home
               </Link>
@@ -21,7 +21,7 @@ export default function Header() {
             <TabsTrigger asChild value="/projects">
               <Link
                 to="/projects"
-                className="px-4 py-2 text-sm font-medium data-[state=active]:text-primary focus:outline-none transition-colors"
+                className="px-4 py-2 text-sm font-medium data-[state=active]:text-primary focus:outline-none"
               >
                 Projects
               </Link>
@@ -29,7 +29,7 @@ export default function Header() {
             <TabsTrigger asChild value="/about">
               <Link
                 to="/about"
-                className="px-4 py-2 text-sm font-medium data-[state=active]:text-primary focus:outline-none transition-colors"
+                className="px-4 py-2 text-sm font-medium data-[state=active]:text-primary focus:outline-none"
               >
                 About
               </Link>

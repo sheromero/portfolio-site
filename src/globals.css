@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -43,10 +44,13 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-icon: var(--icon-color)
 }
 
 /* LIGHT MODE VARIABLES */
 :root {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
   --radius: 0.625rem;
 
   --background: #ebebeb;
@@ -93,6 +97,8 @@
 
   --sidebar-border: #c4b3a9;
   --sidebar-ring: #b7946a;
+
+  --icon-color: #786a62; 
 }
 
 /* DARK MODE VARIABLES */
@@ -140,6 +146,16 @@
 
   --sidebar-border: #4e4c4f;
   --sidebar-ring: #b8a9a0;
+
+  --icon-color: #f4f1ed;
+}
+
+body {
+  font-family: var(--font-sans);
+  /* Optionally set font-weight and smoothing for better readability */
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*

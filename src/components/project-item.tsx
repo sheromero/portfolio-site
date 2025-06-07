@@ -38,7 +38,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
             <div className="flex flex-wrap gap-2">
               {techStack.map((tech, idx) => (
                 <Badge
-                  className="bg-muted text-muted-foreground dark:bg-primary dark:text-foreground"
+                  className="bg-muted text-muted-foreground dark:bg-primary dark:text-foreground transition-transform"
                   key={idx}
                   variant="secondary"
                 >
@@ -55,7 +55,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
                   variant="outline"
                   size="sm"
                   asChild
-                  className="flex items-center gap-1"
+                  className="flex items-center gap-1 transition-transform"
                 >
                   <Link to={link.href} target="_blank">
                     {link.name}

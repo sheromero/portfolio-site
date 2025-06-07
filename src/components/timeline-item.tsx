@@ -52,8 +52,8 @@ export default function TimelineItem({ experience }: TimelineItemProps) {
                 rel="noopener noreferrer"
                 className="flex items-center gap-1"
               >
-                <Badge className="bg-muted text-muted-foreground dark:bg-primary dark:text-foreground">
-                  <Icon name={link.icon} aria-hidden="true" className="size-5"/>
+                <Badge className="bg-muted text-muted-foreground dark:bg-primary dark:text-foreground duration-350 hover:scale-105">
+                  <Icon name={link.icon} aria-hidden="true" />
                   {link.name}
                 </Badge>
               </a>

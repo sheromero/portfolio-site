@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import Experience from "@/components/experience";
 import Socials from "@/components/socials";
-import { ArrowDown, ArrowDownRight, MapPin, File } from "lucide-react";
+import { ArrowDown, ArrowDownRight, MapPin, FileDown } from "lucide-react";
 import ProjectList from "@/components/project-list";
 import { Link } from "@tanstack/react-router";
 import projectData from "@/data/projects.json";
 import { projectListSchema } from "@/lib/schema";
+import TechStack from "@/components/tech-stack";
 
 export const Route = createFileRoute("/")({
   component: App,
@@ -18,10 +19,13 @@ function App() {
 
   return (
     <article className="bg-background text-foreground mt-8 flex flex-col gap-16 pb-16">
-      <section className="bg-background text-foreground flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
+      {/* Intro */}
+      <section className="bg-background text-foreground flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between animate-in fade-in animation-duration-350 slide-in-from-bottom-1">
         <div className="flex flex-col">
           <div className="flex items-center gap-2">
-            <h1 className="title text-5xl">Hey, it's Sherif.</h1>
+            <h1 className="title text-5xl font-bold tracking-tight">
+              Hey, it's Sherif.
+            </h1>
             <img
               src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f920/512.gif"
               alt="🤠"
@@ -54,10 +58,12 @@ function App() {
               href="/resume(wip).pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+              className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-4 py-2 
+              text-sm font-medium text-foreground 
+              hover:bg-muted dark:hover:bg-primary hover:text-accent-foreground hover:scale-105 ease-in-out animation-duration-300"
             >
               Resume
-              <File className="size-4" />
+              <FileDown className="size-4" />
             </a>
             <Socials></Socials>
           </section>
@@ -71,8 +77,19 @@ function App() {
           loading="lazy"
         />
       </section>
-      <Experience></Experience>
-      <section className="flex flex-col gap-8">
+
+      {/* Experience */}
+      <section className="animate-in fade-in animation-duration-350">
+        <Experience />
+      </section>
+
+      {/* Stack */}
+      <section className="animate-in fade-in animation-duration-350 slide-in-from-bottom-1">
+        <TechStack />
+      </section>
+
+      {/* Top 2 Projects */}
+      <section className="flex flex-col gap-8 animate-in fade-in animation-duration-350 slide-in-from-bottom-1">
         <div className="flex justify-between">
           <h2 className="title text-2xl sm:text-3xl">Projects</h2>
         </div>
@@ -80,7 +97,7 @@ function App() {
         <div className="flex justify-center mt-4">
           <Link
             to="/projects"
-            className="inline-flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
+            className="inline-flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
           >
             View More Projects →
           </Link>
