@@ -55,7 +55,7 @@ function App() {
           </div>
           <section className="mt-8 flex items-center gap-8">
             <a
-              href="/resume(wip).pdf"
+              href="/Resume-Sherif-Fawzy.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-4 py-2 
