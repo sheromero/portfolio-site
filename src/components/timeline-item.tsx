@@ -36,7 +36,7 @@ export default function TimelineItem({ experience }: TimelineItemProps) {
         <h2 className="font-semibold leading-none">{name}</h2>
         {title && <p className="text-sm text-muted-foreground">{title}</p>}
         {description && (
-          <ul className="ml-4 list-disc text-sm">
+          <ul className="ml-4 pr-4 list-disc text-sm">
             {description.map((desc, idx) => (
               <li key={idx}>{desc}</li>
             ))}

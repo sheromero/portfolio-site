@@ -12,7 +12,7 @@ function RouteComponent() {
       
       {/* Intro */}
       <section className="space-y-4">
-        <h1 className="text-5xl font-bold tracking-tight">About shero.wiki</h1>
+        <h1 className="text-5xl font-bold tracking-tight">About this site</h1>
         <p className="text-lg text-muted-foreground">
           This is my personal portfolio and development playground. I built it to showcase my projects, 
           test ideas, and experiment with new tech — all in one cohesive, high-performance space.

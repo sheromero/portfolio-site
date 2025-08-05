@@ -12,7 +12,7 @@ export default function Experience() {
     <Tabs defaultValue="work">
       <TabsList className="px-1 mb-2 grid w-full grid-cols-2">
         <TabsTrigger value="work">Work</TabsTrigger>
-        <TabsTrigger value="education">Education</TabsTrigger>
+        <TabsTrigger value="education">Education/Certification</TabsTrigger>
       </TabsList>
 
       <TabsContent value="work" className="animate-in slide-in-from-right-3 duration-350">

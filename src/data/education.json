@@ -1,13 +1,37 @@
 {
   "education": [
     {
+      "name": "Microsoft Certification",
+      "title": "Azure Developer Associate",
+      "startDate": "July 2025",
+      "endDate": "July 2026",
+      "logo": "/ms.png",
+      "description": [
+        "Achieved Microsoft Certified: Azure Developer Associate (AZ-204). Score of 812/1000.",
+        "Demonstrated expertise in developing cloud applications using Azure services like Functions, Blob Storage, and Cosmos DB.",
+        "Applied secure development practices including Azure AD authentication and Key Vault for secret management."
+      ],
+      "links": [
+        {
+          "name": "Certificate Info",
+          "href": "https://learn.microsoft.com/en-us/credentials/certifications/azure-developer",
+          "icon": "briefcase"
+        },
+        {
+          "name": "Verification",
+          "href": "https://learn.microsoft.com/api/credentials/share/en-us/Sherif-3971/61DCE82F97A10285?sharingId=BDE9646D55D1C31E",
+          "icon": "graduation-cap"
+        }
+      ]
+    },
+    {
       "name": "Curtin University",
       "title": "B.Sc. Computer Science",
       "startDate": "2020",
       "endDate": "2022",
       "logo": "/uni.jpg",
       "description": [
-        "Graduated with High Distinction.",
+        "Graduated with High Distinction (CWA: 82.96).",
         "Received Letter of Commendation for academic excellence for years 2020 - 2022.",
         "Completed a capstone project with a well industry partner Thales."
       ],
