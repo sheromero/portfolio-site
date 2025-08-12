@@ -24,7 +24,7 @@
       "techStack": ["React", "Vite", "Tailwind", "TypeScript"],
       "links": [
         { "name": "GitHub", "href": "https://github.com/sheromero/portfolio-site" },
-        { "name": "Website", "href": "https://portfolio-site-pied-three.vercel.app/" }
+        { "name": "Website", "href": "https://sherif.wiki/" }
       ],
       "image": "/portfolio-site.png"
     },
