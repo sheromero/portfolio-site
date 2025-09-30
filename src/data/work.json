@@ -7,9 +7,10 @@
       "endDate": "Apr 2025",
       "logo": "/csc.png",
       "description": [
-        "Built an internal email automation pipeline that parsed invoice emails, extracted key details, and automatically updated the car stock system—cutting down admin time by 2–3 hours per day and reducing manual entry errors.",
-        "Built an AI-powered car valuation extension that cut auction pricing time by 37% and supported over 200 transactions with real-time estimates and market data.",
-        "Designed and deployed REST APIs and analytics dashboards to visualize and improve key dealership workflows."
+        "Built an auction cars valuation model using mainly Pytorch, and Scikit-learn.The model aided in pricing, cutting pricing time by 37% and supported over 200 transactions.",
+        "Developed an email automation pipeline to parse invoice emails, extract key details and automatically update the car stock system Easycars - cutting down admin time by 2-3 hours per day and reducing manual entry errors.",
+        "Led R&D and MVP development of Autodoc, a SaaS that automates the contract process for the auto industry.",
+        "Designed metrics and analytics dashboards using D3 to visualise and improve key dealership workflows."
       ],
       "links": []
     },
@@ -21,7 +22,9 @@
       "logo": "/soletrader.png",
       "description": [
         "Scraped and standardized data from 6 car auction sites—over 4M car records warehoused for machine learning pipelines.",
-        "Automated daily scraping of live and historical car data to support real-time analytics and model training workflows."
+        "Automated daily scraping of live and historical car data to support real-time analytics and model training workflows.",
+        "Delivered several Python and Pandas based data/CSV tools to automate laborious manual entry and calculation jobs for private clients working in companies such as: Etax and iTLC.",
+        "Maintained a Javascript multi-use Chrome extension for Car Source Connect, enabling users to query and redirect to automotive sales and auctions platforms for similar vehicles as the one they are viewing."
       ],
       "links": []
     },
